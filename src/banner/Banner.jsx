@@ -1,5 +1,6 @@
 import React from 'react';
 import Gallary from '../gallary/gallary';
+import ShopByCatagory from '../shopbycatagory/ShopByCatagory';
 
 const Banner = () => {
     return (
@@ -14,6 +15,7 @@ const Banner = () => {
             </div>
         </div>
         <Gallary></Gallary>
+        <ShopByCatagory></ShopByCatagory>
         </div>
     );
 };
