@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Swal from 'sweetalert2'
 import { AuthContext } from '../authprovider/AuthProvider';
 
 const AddToys = () => {
 
     const {user} = useContext(AuthContext);
+    const [catagory,setCatagory] = useState("Car");
 
     const handleAddToys = event =>{
         event.preventDefault();
@@ -13,7 +14,6 @@ const AddToys = () => {
         const name = form.name.value;
         const sellerName = form.sellername.value;
         const sellerEmail = form.selleremail.value;
-        const catagory = form.catagory.value;
         const price = form.price.value;
         const rating = form.rating.value;
         const quantity = form.quantity.value;
@@ -41,6 +41,10 @@ const AddToys = () => {
         });
     }
 
+    const handleCatagory = event =>{
+            setCatagory(event.target.value);
+     }
+
     return (
         <div className='px-48 mt-4'>
             <h1 className='text-4xl font-extrabold text-center mb-6'>Add A Toys</h1>
@@ -65,7 +69,11 @@ const AddToys = () => {
                     </label> <br />
                     <label htmlFor="">
                         Sub Catagory: <br />
-                        <input type="text" name='catagory' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <select onClick={handleCatagory} className="select w-full max-w-xs">
+                         <option>Car</option>
+                         <option>Truck</option>
+                         <option>Bus</option>
+                     </select>
                     </label>
                 </div>
                 <div className='w-[40%]'>

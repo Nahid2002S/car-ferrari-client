@@ -1,14 +1,10 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
 
-const Details = () => {
-    const loadedData = useLoaderData();
-    const {picture, name, sellerName, sellerEmail, price, rating, quantity, details} = loadedData;
-
+const SingleCatagory = ({toys}) => {
+    const {picture, name, sellerName, sellerEmail, price, rating, quantity, details} = toys;
     return (
-        <div className='px-40'>
-            <h1 className='text-3xl font-extrabold text-center my-4'>Toy Details</h1>
-            <div className='flex justify-center items-center gap-8 bg-indigo-200 py-8'>
+        <div>
+            <div className='flex justify-center items-center px-8 gap-8 bg-indigo-200 py-8'>
                 <div>
                 <img className='w-[25rem]' src={picture} alt="" />
                 </div>
@@ -26,4 +22,4 @@ const Details = () => {
     );
 };
 
-export default Details;
+export default SingleCatagory;
