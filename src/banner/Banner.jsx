@@ -2,6 +2,7 @@ import React from 'react';
 import Gallary from '../gallary/gallary';
 import ShopByCatagory from '../shopbycatagory/ShopByCatagory';
 import HeroProduct from '../heroProduct/HeroProduct';
+import TopSeller from '../topSeller/TopSeller';
 
 const Banner = () => {
     return (
@@ -18,6 +19,7 @@ const Banner = () => {
         <Gallary></Gallary>
         <ShopByCatagory></ShopByCatagory>
         <HeroProduct></HeroProduct>
+        <TopSeller></TopSeller>
         </div>
     );
 };
