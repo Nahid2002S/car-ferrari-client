@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { AuthContext } from '../authprovider/AuthProvider';
 
 const SingleToy = ({toy}) => {
+  const {user} = useContext(AuthContext)
     const {sellerName, name, catagory, price, quantity, details, _id} = toy;
+    const notify = () =>  !user && toast("You have to log in first to view details!");
+
     return (
         <div>
           <div className="overflow-x-auto w-full mb-2">
@@ -36,7 +42,7 @@ const SingleToy = ({toy}) => {
         <td>{quantity}</td>
         <td>{details}</td>
         <th>
-          <Link to={`/details/${_id}`}><button className="px-4 py-2 bg-indigo-500 rounded-md">View details</button></Link>
+          <Link to={`/details/${_id}`}><button onClick={notify} className="px-4 py-2 bg-indigo-500 rounded-md">View details</button></Link>
         </th>
       </tr>
       </tbody>

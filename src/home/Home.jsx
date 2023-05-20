@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import { Outlet } from 'react-router-dom';
 import Footer from '../footer/Footer';
 import Gallary from '../gallary/gallary';
+import { ToastContainer } from 'react-toastify';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

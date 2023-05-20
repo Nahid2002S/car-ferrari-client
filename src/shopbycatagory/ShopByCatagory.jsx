@@ -34,9 +34,9 @@ const ShopByCatagory = () => {
             <h1 className='text-3xl font-extrabold text-center'>Shop By Catagory</h1>
             <div>
             <div className="tabs">
-            <a onClick={handleCarCatagory} className="tab tab-lifted tab-active">Car</a> 
-            <a onClick={handleTruckCatagory} className="tab tab-lifted">Truck</a> 
-            <a onClick={handleBusCatagory} className="tab tab-lifted">Bus</a>
+            <a onClick={handleCarCatagory} className={`tab tab-lifted ${activeTab === "Car" ? 'tab-active' : ""}`}>Car</a> 
+            <a onClick={handleTruckCatagory} className={`tab tab-lifted ${activeTab === "Truck" ? 'tab-active' : ""}`}>Truck</a> 
+            <a onClick={handleBusCatagory} className={`tab tab-lifted ${activeTab === "Bus" ? 'tab-active' : ""}`}>Bus</a>
            </div>
            <div className='grid grid-cols-2 gap-4'>
            {
