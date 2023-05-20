@@ -5,7 +5,7 @@ const HeroProduct = () => {
         <div className='mt-4'>
             <h1 className='text-3xl font-extrabold text-center my-6'>Best Selling Product</h1>
            <div className='grid grid-cols-3 gap-4'>
-           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl">
+           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl" data-aos="flip-left">
   <figure><img src="https://img.freepik.com/free-photo/close-up-toy-car-with-easter-eggs_23-2149318371.jpg?w=740&t=st=1684512927~exp=1684513527~hmac=55a0a27b2e7a2cd678c75e77c4a1259515a761a2ee9830edebb88be178443e80" alt="Shoes" /></figure>
   <div className="card-body">
   <div>

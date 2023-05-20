@@ -9,7 +9,7 @@ const Banner = () => {
     return (
         <div className='px-16'>
             <div style={{backgroundImage: `url(${background})`}}  className='flex justify-center items-center mt-6 bg-gradient-to-r from-indigo-500 to-sky-800 px-8 py-12 rounded-md bg-center bg-no-repeat bg-cover'>
-            <div className='w-[80%]'>
+            <div className='w-[80%]' data-aos="fade-up">
                 <h1 className='text-7xl'>Kids Ferrari</h1>
                 <p></p>
             </div>
