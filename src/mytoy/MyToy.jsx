@@ -11,7 +11,8 @@ const MyToy = () => {
         fetch(`https://assignment-11-server-nahid2002s.vercel.app/mytoy/${user?.email}`)
         .then(res => res.json())
         .then(data => setMytoys(data))
-    },[user])
+    },[user]);
+
     return (
         <div className='px-16'>
             <h1 className='text-3xl font-extrabold text-center mb-4'>My Toys</h1>
