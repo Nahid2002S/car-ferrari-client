@@ -48,7 +48,7 @@ const AddToys = () => {
     return (
         <div className='px-48 mt-4'>
             <h1 className='text-4xl font-extrabold text-center mb-6'>Add A Toys</h1>
-            <form onSubmit={handleAddToys} className='bg-indigo-200 py-12 rounded-md'>
+            <form onSubmit={handleAddToys} className='bg-gradient-to-r from-indigo-600 to-sky-950 text-white py-12 rounded-md'>
                 <div className='flex justify-center gap-16'>
                 <div className='w-[40%]'>
                     <label>

@@ -30,7 +30,7 @@ const Register = () => {
 
     return (
         <div className='px-2 text-black'>
-        <div className='px-8 py-6 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-pink-400 to-indigo-900 lg:w-[35%] mx-auto mt-6 rounded-md'>
+        <div className='px-8 py-6 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-indigo-400 to-indigo-800 lg:w-[35%] mx-auto mt-6 rounded-md'>
         <h3 className='text-center text-3xl font-semibold mb-6'>Please <span className='text-indigo-200'>Register!!!</span></h3>
         <form onSubmit={handleRegister} className='flex flex-col gap-4'>
         <label htmlFor="" className='text-xl font-semibold'>Name: <br />
@@ -46,7 +46,7 @@ const Register = () => {
             <input type="url" name="photo" id="photo" className='px-4 py-2 rounded-md w-full' placeholder='Photo URL' required/>
             </label>
             <p className='text-red-200 font-semibold'></p>
-            <button className="px-6 py-2 text-purple-100 rounded bg-gradient-to-r from-pink-700 to-indigo-800 shadow:md">Register </button>
+            <button className="px-6 py-2 text-purple-100 rounded bg-gradient-to-r from-indigo-800 to-black shadow:md">Register </button>
             <p>Already have an account? <Link to='/login' className='text-blue-200 underline font-semibold'>Login</Link></p>
         </form>
     </div>

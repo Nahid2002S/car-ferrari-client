@@ -42,7 +42,7 @@ const SingleToy = ({toy}) => {
         <td>{quantity}</td>
         <td>{details}</td>
         <th>
-          <Link to={`/details/${_id}`}><button onClick={notify} className="px-4 py-2 bg-indigo-500 rounded-md">View details</button></Link>
+          <Link to={`/toy/${_id}`}><button onClick={notify} className="px-4 py-2 bg-indigo-500 rounded-md">View details</button></Link>
         </th>
       </tr>
       </tbody>

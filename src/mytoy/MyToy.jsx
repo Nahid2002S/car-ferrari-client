@@ -15,11 +15,9 @@ const MyToy = () => {
     return (
         <div className='px-16'>
             <h1 className='text-3xl font-extrabold text-center mb-4'>My Toys</h1>
-  
             {
                 mytoys.map(mytoy => <MySingleToy key={mytoy._id} mytoy={mytoy}></MySingleToy>)
             }
-
             </div>
     );
 };
