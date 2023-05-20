@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../authprovider/AuthProvider';
+import useTitle from '../hook/UseTitle';
 
 const Register = () => {
 
@@ -27,6 +28,8 @@ const Register = () => {
             console.log(err.message)
         })     
     }
+
+    useTitle('Register');
 
     return (
         <div className='px-2 text-black'>

@@ -1,6 +1,11 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
+import useTitle from '../hook/UseTitle';
 
 const Blogs = () => {
+
+    useTitle('Blogs');
+
     return (
         <div className='lg:px-16 px-2 mt-4'>
             <div>

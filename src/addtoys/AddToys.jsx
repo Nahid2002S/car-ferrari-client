@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react';
 import Swal from 'sweetalert2'
 import { AuthContext } from '../authprovider/AuthProvider';
+import {Helmet} from "react-helmet";
+import useTitle from '../hook/UseTitle';
 
 const AddToys = () => {
 
@@ -44,6 +46,8 @@ const AddToys = () => {
     const handleCatagory = event =>{
             setCatagory(event.target.value);
      }
+
+     useTitle('Add Toys');
 
     return (
         <div className='px-48 mt-4'>

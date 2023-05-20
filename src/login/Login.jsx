@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../authprovider/AuthProvider';
+import useTitle from '../hook/UseTitle';
 
 const Login = () => {
 
@@ -36,6 +37,8 @@ const Login = () => {
             console.log(err)
         })
     }
+
+    useTitle('Login');
 
     return (
         <div className='px-2 text-black'>

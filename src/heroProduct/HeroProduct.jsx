@@ -1,6 +1,7 @@
 import React from 'react';
 
 const HeroProduct = () => {
+
     return (
         <div className='mt-4'>
             <h1 className='text-3xl font-extrabold text-center my-6'>Best Selling Product</h1>
