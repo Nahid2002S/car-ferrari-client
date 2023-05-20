@@ -13,7 +13,7 @@ const Header = () => {
 }
     return (
         <div className='px-16'>
-            <div className="navbar bg-indigo-200 rounded-md">
+            <div className="navbar bg-gradient-to-r from-indigo-600 to-sky-800 text-white rounded-md">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">

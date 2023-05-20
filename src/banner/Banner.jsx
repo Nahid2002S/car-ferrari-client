@@ -3,11 +3,12 @@ import Gallary from '../gallary/gallary';
 import ShopByCatagory from '../shopbycatagory/ShopByCatagory';
 import HeroProduct from '../heroProduct/HeroProduct';
 import TopSeller from '../topSeller/TopSeller';
+import background from '../assets/background.jpeg'
 
 const Banner = () => {
     return (
         <div className='px-16'>
-            <div className='flex justify-center items-center mt-6 bg-indigo-200 px-8 py-12 rounded-md'>
+            <div style={{backgroundImage: `url(${background})`}}  className='flex justify-center items-center mt-6 bg-gradient-to-r from-indigo-500 to-sky-800 px-8 py-12 rounded-md bg-center bg-no-repeat bg-cover'>
             <div className='w-[80%]'>
                 <h1 className='text-7xl'>Kids Ferrari</h1>
                 <p></p>

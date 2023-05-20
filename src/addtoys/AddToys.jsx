@@ -53,23 +53,23 @@ const AddToys = () => {
                 <div className='w-[40%]'>
                     <label>
                         Picture Url: <br />
-                        <input type="url" name='picture' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <input type="url" name='picture' className='w-[100%] text-black px-4 py-2 rounded-md mb-2' />
                     </label> <br />
                     <label htmlFor="">
                         Toy Name: <br />
-                        <input type="text" name='name' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <input type="text" name='name' className='w-[100%] text-black px-4 py-2 rounded-md mb-2' />
                     </label> <br />
                     <label htmlFor="">
                         Seller Name: <br />
-                        <input defaultValue={user?.displayName} type="text" name='sellername' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <input defaultValue={user?.displayName} type="text" name='sellername' className='w-[100%] text-black px-4 py-2 rounded-md mb-2' />
                     </label> <br />
                     <label htmlFor="">
                         Seller Email: <br />
-                        <input defaultValue={user?.email} type="text" name='selleremail' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <input defaultValue={user?.email} type="text" name='selleremail' className='w-[100%] text-black px-4 py-2 rounded-md mb-2' />
                     </label> <br />
                     <label htmlFor="">
                         Sub Catagory: <br />
-                        <select onClick={handleCatagory} className="select w-full max-w-xs">
+                        <select onClick={handleCatagory} className="select text-black w-full max-w-xs">
                          <option>Car</option>
                          <option>Truck</option>
                          <option>Bus</option>
@@ -79,19 +79,19 @@ const AddToys = () => {
                 <div className='w-[40%]'>
                 <label htmlFor="">
                         Price: <br />
-                        <input type="text" name='price' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <input type="text" name='price' className='w-[100%] text-black px-4 py-2 rounded-md mb-2' />
                 </label> <br />
                 <label htmlFor="">
                         Rating: <br />
-                        <input type="text" name='rating' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <input type="text" name='rating' className='w-[100%] text-black px-4 py-2 rounded-md mb-2' />
                 </label> <br />
                 <label htmlFor="">
                         Available Quantity: <br />
-                        <input type="text" name='quantity' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <input type="text" name='quantity' className='w-[100%] text-black px-4 py-2 rounded-md mb-2' />
                 </label> <br />
                 <label htmlFor="">
                         Detail Description: <br />
-                        <input type="text" name='details' className='w-[100%] px-4 py-2 rounded-md mb-2' />
+                        <input type="text" name='details' className='w-[100%] text-black px-4 py-2 rounded-md mb-2' />
                 </label>
                 </div>
                 </div>
