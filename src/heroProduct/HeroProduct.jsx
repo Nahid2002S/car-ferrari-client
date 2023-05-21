@@ -3,7 +3,7 @@ import React from 'react';
 const HeroProduct = () => {
 
     return (
-        <div className='mt-4'>
+        <div className='mt-4 w-[90%] lg:w-[100%] pl-7 lg:pl-0'>
             <h1 className='text-3xl font-extrabold text-center my-6'>Best Selling Product</h1>
            <div className='grid lg:grid-cols-3 justify-center gap-4 lg:pl-12 px-2'>
            <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400" data-aos="zoom-in-right">
