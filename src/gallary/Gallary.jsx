@@ -3,7 +3,7 @@ import React from 'react';
 const Gallary = () => {
     return (
         <div>
-            <h1 className='font-extrabold text-3xl text-center my-4'>Photo Gallary</h1>
+            <h1 className='font-extrabold text-3xl text-center mb-4 mt-12'>Photo Gallary</h1>
             <div className='lg:grid grid-cols-4 gap-2 mt-6 lg:px-32 px-2'>
                 <div className='border-4 border-indigo-800 rounded-md mb-2 lg:mb-0'><img src="https://img.freepik.com/free-photo/closeup-shot-small-toy-car-wooden-train-track_181624-32510.jpg?w=740&t=st=1684486128~exp=1684486728~hmac=4e2762f3d88555d50f5d1b17310ca6a2635d4c4a34c6329c600106c0ad092078" alt="" /></div>
                 <div className='border-4 border-indigo-800 rounded-md mb-2 lg:mb-0'><img src="https://img.freepik.com/free-photo/closeup-orange-wooden-toy-car-tracks-lights_181624-23893.jpg?w=740&t=st=1684486468~exp=1684487068~hmac=4ed89609f5104c6a872562ebc569437dff6e6777a66de03bf08d09d2d99eb88f" alt="" /></div>
