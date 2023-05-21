@@ -12,11 +12,11 @@ const TopSeller = () => {
       </div>
   <div className="card-body">
   <div>
-    <h2>Toy Name: Mini Truck</h2>
-    <h3>Seller Name: Tanvir Sayem</h3>
-    <h3>Seller Email: tanvir@gmail.com</h3>
-    <h4>Price: 350</h4>
-    <h4>Rating: 5</h4>
+    <h2 className='font-bold text-sky-300'>Toy Name: Mini Truck</h2>
+    <h3 className='font-bold text-sky-300'>Seller Name: Tanvir Sayem</h3>
+    <h3 className='font-bold text-sky-300'>Seller Email: tanvir@gmail.com</h3>
+    <h4 className='font-bold text-sky-300'>Price: 350</h4>
+    <h4 className='font-bold text-sky-300'>Rating: 5</h4>
     </div>
       <button className="btn btn-primary">View Details</button>
   </div>
@@ -27,11 +27,11 @@ const TopSeller = () => {
       </div>
   <div className="card-body">
   <div>
-    <h2>Toy Name: Sweet Car</h2>
-    <h3>Seller Name: Emtiaz Abir</h3>
-    <h3>Seller Email: abir@gmail.com</h3>
-    <h4>Price: 420</h4>
-    <h4>Rating: 5</h4>
+    <h2 className='font-bold text-sky-300'>Toy Name: Sweet Car</h2>
+    <h3 className='font-bold text-sky-300'>Seller Name: Emtiaz Abir</h3>
+    <h3 className='font-bold text-sky-300'>Seller Email: abir@gmail.com</h3>
+    <h4 className='font-bold text-sky-300'>Price: 420</h4>
+    <h4 className='font-bold text-sky-300'>Rating: 5</h4>
     </div>
       <button className="btn btn-primary">View Details</button>
   </div>
@@ -42,11 +42,11 @@ const TopSeller = () => {
       </div>
   <div className="card-body">
   <div>
-    <h2>Toy Name: Pink Jeep</h2>
-    <h3>Seller Name: Abdullah Mamun</h3>
-    <h3>Seller Email: Noman@gmail.com</h3>
-    <h4>Price: 380</h4>
-    <h4>Rating: 4.8</h4>
+    <h2 className='font-bold text-sky-300'>Toy Name: Pink Jeep</h2>
+    <h3 className='font-bold text-sky-300'>Seller Name: Abdullah Mamun</h3>
+    <h3 className='font-bold text-sky-300'>Seller Email: Noman@gmail.com</h3>
+    <h4 className='font-bold text-sky-300'>Price: 380</h4>
+    <h4 className='font-bold text-sky-300'>Rating: 4.8</h4>
     </div>
       <button className="btn btn-primary">View Details</button>
   </div>
@@ -57,11 +57,11 @@ const TopSeller = () => {
       </div>
   <div className="card-body">
   <div>
-    <h2>Toy Name: Blue Monstar</h2>
-    <h3>Seller Name: Sahim Nahid</h3>
-    <h3>Seller Email: nahid@gmail.com</h3>
-    <h4>Price: 520</h4>
-    <h4>Rating: 4.9</h4>
+    <h2 className='font-bold text-sky-300'>Toy Name: Blue Monstar</h2>
+    <h3 className='font-bold text-sky-300'>Seller Name: Sahim Nahid</h3>
+    <h3 className='font-bold text-sky-300'>Seller Email: nahid@gmail.com</h3>
+    <h4 className='font-bold text-sky-300'>Price: 520</h4>
+    <h4 className='font-bold text-sky-300'>Rating: 4.9</h4>
     </div>
       <button className="btn btn-primary">View Details</button>
   </div>
@@ -72,11 +72,11 @@ const TopSeller = () => {
       </div>
   <div className="card-body">
   <div>
-    <h2>Toy Name: Booster Truck</h2>
-    <h3>Seller Name: Abdullah Noman</h3>
-    <h3>Seller Email: noman@gmail.com</h3>
-    <h4>Price: 420</h4>
-    <h4>Rating: 4.7</h4>
+    <h2 className='font-bold text-sky-300'>Toy Name: Booster Truck</h2>
+    <h3 className='font-bold text-sky-300'>Seller Name: Abdullah Noman</h3>
+    <h3 className='font-bold text-sky-300'>Seller Email: noman@gmail.com</h3>
+    <h4 className='font-bold text-sky-300'>Price: 420</h4>
+    <h4 className='font-bold text-sky-300'>Rating: 4.7</h4>
     </div>
       <button className="btn btn-primary">View Details</button>
   </div>
@@ -87,11 +87,11 @@ const TopSeller = () => {
       </div>
   <div className="card-body">
   <div>
-    <h2>Toy Name: Smart Speedy</h2>
-    <h3>Seller Name: Tarif Hossain</h3>
-    <h3>Seller Email: tarif@gmail.com</h3>
-    <h4>Price: 360</h4>
-    <h4>Rating: 4.6</h4>
+    <h2 className='font-bold text-sky-300'>Toy Name: Smart Speedy</h2>
+    <h3 className='font-bold text-sky-300'>Seller Name: Tarif Hossain</h3>
+    <h3 className='font-bold text-sky-300'>Seller Email: tarif@gmail.com</h3>
+    <h4 className='font-bold text-sky-300'>Price: 360</h4>
+    <h4 className='font-bold text-sky-300'>Rating: 4.6</h4>
     </div>
       <button className="btn btn-primary">View Details</button>
   </div>
