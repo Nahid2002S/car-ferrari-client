@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { AuthContext } from '../authprovider/AuthProvider';
 import useTitle from '../hook/UseTitle';
 
 const Update = () => {

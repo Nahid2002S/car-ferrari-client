@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../authprovider/AuthProvider';
 import useTitle from '../hook/UseTitle';
@@ -8,6 +8,8 @@ const Login = () => {
     const {loginUser, googleAuth} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
+
+    const [errors, setErrors] = useState("");
 
 
     const from = location.state?.from?.pathname || '/';
@@ -24,7 +26,7 @@ const Login = () => {
             console.log(result)
         })
         .catch(err => {
-            console.log(err.message)
+            setErrors(err.message)
         })
     }
 
@@ -51,7 +53,7 @@ const Login = () => {
             <label htmlFor="" className='text-xl font-semibold text-black'>Password: <br />
             <input type="password" name="password" id="password" className='px-4 py-2 rounded-md w-full' required />
             </label>
-            <p className='font-semibold text-red-200'>{}</p>
+            <p className='font-semibold text-red-200'>{errors}</p>
             <button className="px-6 py-2 text-purple-100 rounded bg-gradient-to-r from-indigo-800 to-black shadow:md">Login</button>
             <hr />
             <Link onClick={handleGoogleLogin} className="btn btn-outline btn-primary">Login With Google</Link>

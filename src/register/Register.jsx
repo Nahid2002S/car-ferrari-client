@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../authprovider/AuthProvider';
 import useTitle from '../hook/UseTitle';
@@ -7,6 +7,8 @@ const Register = () => {
 
     const {registerUser, updateUser} = useContext(AuthContext);
     const navigate = useNavigate();
+
+    const [errors, setErrors] = useState("");
 
     const handleRegister = (event) =>{
     event.preventDefault();
@@ -25,7 +27,7 @@ const Register = () => {
             navigate('/');
         })
         .catch(err => {
-            console.log(err.message)
+            setErrors(err.message)
         })     
     }
 
@@ -48,7 +50,7 @@ const Register = () => {
             <label htmlFor="" className='text-xl font-semibold'>Photo URL: <br />
             <input type="url" name="photo" id="photo" className='px-4 py-2 rounded-md w-full' placeholder='Photo URL' required/>
             </label>
-            <p className='text-red-200 font-semibold'></p>
+            <p className='text-red-200 font-semibold'>{errors}</p>
             <button className="px-6 py-2 text-purple-100 rounded bg-gradient-to-r from-indigo-800 to-black shadow:md">Register </button>
             <p>Already have an account? <Link to='/login' className='text-blue-200 underline font-semibold'>Login</Link></p>
         </form>

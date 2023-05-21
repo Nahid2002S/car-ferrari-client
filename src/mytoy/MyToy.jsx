@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../authprovider/AuthProvider';
 import MySingleToy from '../mySingletoy/MySingleToy';
 import useTitle from '../hook/UseTitle';
+import Swal from 'sweetalert2'
 
 const MyToy = () => {
     const {user} = useContext(AuthContext);
@@ -13,6 +14,37 @@ const MyToy = () => {
         .then(res => res.json())
         .then(data => setMytoys(data))
     },[user]);
+
+    const handleDelete = _id =>{
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+  
+            fetch(`https://assignment-11-server-nahid2002s.vercel.app/toy/${_id}`, {
+              method : 'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+              if(data.deletedCount > 0){
+                 Swal.fire(
+              'Deleted!',
+              'Your toy has been deleted.',
+              'success'
+            )
+            const remaining = mytoys.filter(mytoy => mytoy._id !== _id);
+            setMytoys(remaining)
+              }
+            });
+          }
+        })
+      }
 
     const handleAscending = () =>{
         fetch(`https://assignment-11-server-nahid2002s.vercel.app/ascending/${user?.email}`)
@@ -36,7 +68,7 @@ const MyToy = () => {
                 <button onClick={handleDescending} className='px-4 py-2 bg-indigo-500'>Descending</button>
             </div>
             {
-                mytoys.map(mytoy => <MySingleToy key={mytoy._id} mytoy={mytoy}></MySingleToy>)
+                mytoys.map(mytoy => <MySingleToy key={mytoy._id} mytoy={mytoy} handleDelete={handleDelete}></MySingleToy>)
             }
             </div>
     );
