@@ -25,7 +25,6 @@ const Alltoys = () => {
 
     useTitle('All Toys');
 
-
     return (
         <div className='px-16 mt-6'>
           <h1 className='text-3xl font-extrabold text-center mb-4'>All Toys</h1>
@@ -39,9 +38,9 @@ const Alltoys = () => {
       <tr>
         <th>Seller Name</th>
         <th>Toy Name</th>
-        <th>Catagory</th>
+        <th>Sub Catagory</th>
         <th>Price</th>
-        <th>Quantity</th>
+        <th>Available Quantity</th>
         <th>View More</th>
       </tr>
     </thead>

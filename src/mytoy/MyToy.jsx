@@ -73,9 +73,9 @@ const MyToy = () => {
       <tr>
         <th>Seller Name</th>
         <th>Toy Name</th>
-        <th>Catagory</th>
+        <th>Sub Catagory</th>
         <th>Price</th>
-        <th>Quantity</th>
+        <th>Available Quantity</th>
         <th>Action</th>
       </tr>
     </thead>
