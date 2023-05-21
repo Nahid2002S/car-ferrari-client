@@ -30,15 +30,15 @@ const ShopByCatagory = () => {
   }
 
     return (
-        <div>
+        <div className='lg:px-12 px-2'>
             <h1 className='text-3xl font-extrabold text-center'>Shop By Catagory</h1>
             <div>
-            <div className="tabs">
+            <div className="tabs flex justify-center m-4">
             <a onClick={handleCarCatagory} className={`tab tab-lifted ${activeTab === "Car" ? 'tab-active' : ""}`}>Car</a> 
             <a onClick={handleTruckCatagory} className={`tab tab-lifted ${activeTab === "Truck" ? 'tab-active' : ""}`}>Truck</a> 
             <a onClick={handleBusCatagory} className={`tab tab-lifted ${activeTab === "Bus" ? 'tab-active' : ""}`}>Bus</a>
            </div>
-           <div className='grid grid-cols-2 gap-4'>
+           <div className='lg:grid grid-cols-3 gap-4'>
            {
               activeTab === "Car" ? CarCatagory.map(toys => <SingleCatagory toys={toys} key={toys._id}></SingleCatagory>) : "" || activeTab === "Truck" ? TruckCatagory.map(toys => <SingleCatagory toys={toys} key={toys._id}></SingleCatagory>) : "" || activeTab === "Bus" ? BusCatagory.map(toys => <SingleCatagory toys={toys} key={toys._id}></SingleCatagory>) : ""
            }

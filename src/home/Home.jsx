@@ -10,7 +10,7 @@ const Home = () => {
     useTitle('Home');
 
     return (
-        <div className='bg-indigo-300 py-4'>
+        <div className='bg-indigo-300'>
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
