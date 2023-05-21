@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Banner from '../banner/Banner';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../authprovider/AuthProvider';
 import logo from '../assets/logo.png'
 
@@ -37,12 +37,12 @@ const Header = () => {
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/alltoys'>All Toys</Link></li>
-      <li><Link to='/mytoys'>My Toys</Link></li>
-      <li><Link to='/addtoys'>Add A Toy</Link></li>
-      <li><Link to='/blogs'>Blogs</Link></li>
+    <ul className="menu menu-horizontal px-1 font-semibold">
+      <li><NavLink to='/' className={({ isActive }) => (isActive ? 'font-extrabold text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-200 to-fuchsia-300' : '')}>Home</NavLink></li>
+      <li><NavLink to='/alltoys' className={({ isActive }) => (isActive ? 'font-extrabold text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-200 to-fuchsia-300' : '')}>All Toys</NavLink></li>
+      <li><NavLink to='/mytoys' className={({ isActive }) => (isActive ? 'font-extrabold text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-200 to-fuchsia-300' : '')}>My Toys</NavLink></li>
+      <li><NavLink to='/addtoys' className={({ isActive }) => (isActive ? 'font-extrabold text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-200 to-fuchsia-300' : '')}>Add A Toy</NavLink></li>
+      <li><NavLink to='/blogs' className={({ isActive }) => (isActive ? 'font-extrabold text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-200 to-fuchsia-300' : '')}>Blogs</NavLink></li>
       {
         !user ? <li><Link to='register'>Register</Link></li> : ""
       }
