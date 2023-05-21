@@ -64,8 +64,8 @@ const MyToy = () => {
         <div className='px-16'>
             <h1 className='text-3xl font-extrabold text-center mb-4'>My Toys</h1>
             <div className='mb-4 flex gap-2'>
-                <button onClick={handleAscending} className='px-4 py-2 bg-indigo-500'>Ascending</button>
-                <button onClick={handleDescending} className='px-4 py-2 bg-indigo-500'>Descending</button>
+                <button onClick={handleAscending} className='px-4 py-2 bg-indigo-500'>Price Low To High</button>
+                <button onClick={handleDescending} className='px-4 py-2 bg-indigo-500'>Price High To Low</button>
             </div>
             <div className="overflow-x-auto w-full mb-2">
             <table className='table w-full'>
