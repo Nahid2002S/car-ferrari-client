@@ -48,21 +48,21 @@ const Update = () => {
                 <div className='flex justify-center gap-16'>
                 <div className='w-[40%]'>
                 <label htmlFor="">
-                        Price: <br />
+                    <span className='font-semibold text-sky-200'>Price:</span> <br />
                         <input type="text" name='price' className='w-[100%] px-4 py-2 rounded-md mb-2' required defaultValue={price} />
                 </label> <br />
                 <label htmlFor="">
-                        Available Quantity: <br />
+                        <span className='font-semibold text-sky-200'>Available Quantity:</span> <br />
                         <input type="text" name='quantity' className='w-[100%] px-4 py-2 rounded-md mb-2' required defaultValue={quantity} />
                 </label> <br />
                 <label htmlFor="">
-                        Detail Description: <br />
+                        <span className='font-semibold text-sky-200'>Detail Description:</span> <br />
                         <input type="text" name='details' className='w-[100%] px-4 py-2 rounded-md mb-2' required defaultValue={details} />
                 </label>
                 </div>
                 </div>
                 <div className='px-16 mt-2 flex justify-center'>
-                    <button className='px-4 py-2 bg-indigo-500 w-[30%] rounded-md'>Update Toy</button>
+                    <button className='px-4 py-2 bg-gradient-to-r from-violet-300 to-fuchsia-300 rounded-md'><span className='font-bold'>Update Toy</span></button>
                 </div>
             </form>
         </div>
