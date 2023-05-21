@@ -14,7 +14,7 @@ const Header = () => {
 }
     return (
         <div>
-            <div className="navbar bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-indigo-600 to-indigo-800 text-white px-8">
+            <div className="navbar bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-indigo-600 to-indigo-800 text-white lg:px-8">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -32,7 +32,7 @@ const Header = () => {
       </ul>
     </div>
     <div className='flex items-center'>
-      <img src={logo} className='w-[4rem]' alt="" />
+      <img src={logo} className='w-[4rem] -ml-4 lg:ml-0 ' alt="" />
     <a className="btn btn-ghost normal-case text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-200 to-fuchsia-300 -ml-4">Kids Ferrari</a>
     </div>
   </div>

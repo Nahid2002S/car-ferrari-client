@@ -3,11 +3,11 @@ import logo from '../assets/logo.png'
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer p-10 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900 text-black">
+        <div className='bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900 text-sky-200 px-4 lg:px-10 py-6'>
+    <footer className="footer p-1">
   <div>
     <img src={logo} className='w-[10rem]' alt="" />
-    <p>KIDS FERRARI<br/>Global Toy Marketplace Since 2002</p>
+    <p><span className='text-2xl font-extrabold'>KIDS FERRARI</span><br/>Global Toy Marketplace Since 2002</p>
   </div>  
   <div>
   <div className='mb-4'>
@@ -29,12 +29,15 @@ const Footer = () => {
         <span className="label-text">Enter your email address</span>
       </label> 
       <div className="relative">
-        <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" /> 
+        <input type="text" placeholder="username@site.com" className="input input-bordered text-black w-full pr-16" /> 
         <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
       </div>
     </div>
   </div>
 </footer>
+<div className='text-center font-semibold mt-4'>
+    <p>Copyright © 2023 - All right reserved by KIDS FERRARI</p>
+  </div>
         </div>
     );
 };
