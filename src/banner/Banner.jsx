@@ -3,6 +3,7 @@ import Gallary from '../gallary/gallary';
 import ShopByCatagory from '../shopbycatagory/ShopByCatagory';
 import HeroProduct from '../heroProduct/HeroProduct';
 import TopSeller from '../topSeller/TopSeller';
+import car from '../assets/car.png'
 
 const Banner = () => {
     return (
@@ -14,7 +15,7 @@ const Banner = () => {
                 <button className="px-6 py-2 text-gray-800 font-bold rounded bg-gradient-to-r from-violet-200 to-fuchsia-300 shadow:md">View More</button>
             </div>
             <div>
-                <img className='w-[90%]' src="https://img.freepik.com/free-vector/different-kind-toys_1308-74241.jpg?w=740&t=st=1684341440~exp=1684342040~hmac=df5fa17d33e14ec6a25d2233ed4a2a8e419b9ac3c834acad1e59d41777249f88" alt="Toys" />
+                <img className='w-[150vh]' src={car} alt="Toys" />
             </div>
         </div>
         <Gallary></Gallary>

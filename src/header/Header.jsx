@@ -14,7 +14,7 @@ const Header = () => {
 }
     return (
         <div>
-            <div className="navbar bg-gradient-to-r from-indigo-600 to-indigo-700 text-white px-8">
+            <div className="navbar bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-indigo-600 to-indigo-800 text-white px-8">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">

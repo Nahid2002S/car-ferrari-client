@@ -8,9 +8,9 @@ const Details = () => {
 
     useTitle('Toy Details');
     return (
-        <div className='px-40'>
+        <div className='lg:px-52 px-2'>
             <h1 className='text-3xl font-extrabold text-center my-4'>Toy Details</h1>
-            <div className='flex justify-center items-center gap-8 bg-indigo-200 py-8'>
+            <div className='flex justify-center items-center gap-12 rounded-lg bg-gradient-to-r from-indigo-600 to-sky-950 py-8 mb-4'>
                 <div>
                 <img className='w-[25rem]' src={picture} alt="" />
                 </div>

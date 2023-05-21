@@ -43,7 +43,7 @@ const Login = () => {
     useTitle('Login');
 
     return (
-        <div className='px-2 text-black'>
+        <div className='px-2 text-black mb-4'>
         <div className='px-8 py-6 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-indigo-400 to-indigo-800 lg:w-[35%] mx-auto mt-6 rounded-md'>
         <h3 className='text-center text-black text-3xl font-semibold mb-6 '>Please <span className='text-indigo-200'>Login!!!</span></h3>
         <form onSubmit={handleLogin} className='flex flex-col gap-4'>
