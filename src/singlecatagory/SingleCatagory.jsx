@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleCatagory = ({toys}) => {
-    const {picture, name, sellerName, sellerEmail, price, rating, quantity, details} = toys;
+    const {picture, name, price, rating, _id} = toys;
     return (
         <div>
-            <div className='lg:px-8 px-2 rounded-md lg:gap-8 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400 py-8 mb-2 lg:mb-0'>
+            <div className='lg:px-8 px-2 h-[35rem] rounded-md lg:gap-8 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400 py-8 mb-2 lg:mb-0'>
                 <div>
                 <img className='w-[25rem] border-4 border-pink-500' src={picture} alt="" />
                 </div>
@@ -12,8 +13,8 @@ const SingleCatagory = ({toys}) => {
             <h2>Toy Name: {name}</h2>
             <h4>Price: {price}</h4>
             <h4>Rating: {rating}</h4>
-            <p>Details: {details}</p>
             </div>
+            <Link to={`/toy/${_id}`}><button className='bg-indigo-500 px-4 py-2 rounded-md text-white'>View Details</button></Link>
             </div>
         </div>
     );

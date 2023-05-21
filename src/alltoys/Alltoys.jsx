@@ -33,11 +33,25 @@ const Alltoys = () => {
             <input type="text" name='name' className='mb-4 px-4 py-2 mr-2' />
             <button className='px-4 py-2 bg-indigo-500'>Search</button>
             </form>
-          <div>
-          </div>
+            <div className="overflow-x-auto w-full mb-2">
+            <table className="table w-full">
+            <thead>
+      <tr>
+        <th>Seller Name</th>
+        <th>Toy Name</th>
+        <th>Catagory</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>View More</th>
+      </tr>
+    </thead>
+    <tbody>
           {
             toys.map(toy => <SingleToy key={toy._id} toy={toy}></SingleToy>)
           }
+    </tbody>
+    </table>
+    </div>
        </div>
     );
 };

@@ -30,7 +30,7 @@ const ShopByCatagory = () => {
   }
 
     return (
-        <div className='lg:px-12 px-2'>
+        <div className='lg:px-12 px-2 '>
             <h1 className='text-3xl font-extrabold text-center'>Shop By Catagory</h1>
             <div>
             <div className="tabs flex justify-center m-4">

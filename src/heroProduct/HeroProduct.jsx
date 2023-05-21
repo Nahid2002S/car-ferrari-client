@@ -6,7 +6,7 @@ const HeroProduct = () => {
         <div className='mt-4'>
             <h1 className='text-3xl font-extrabold text-center my-6'>Best Selling Product</h1>
            <div className='grid lg:grid-cols-3 justify-center gap-4 lg:pl-12 px-2'>
-           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400" data-aos="flip-left">
+           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400" data-aos="zoom-in-right">
   <figure><img src="https://img.freepik.com/free-photo/close-up-toy-car-with-easter-eggs_23-2149318371.jpg?w=740&t=st=1684512927~exp=1684513527~hmac=55a0a27b2e7a2cd678c75e77c4a1259515a761a2ee9830edebb88be178443e80" alt="Shoes" /></figure>
   <div className="card-body">
   <div>
@@ -19,7 +19,7 @@ const HeroProduct = () => {
       <button className="btn btn-primary">View Details</button>
   </div>
 </div>
-           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400">
+           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400" data-aos="zoom-in-up">
   <figure><img src="https://img.freepik.com/free-photo/white-easter-car-with-pink-egg-background_23-2149301327.jpg?w=740&t=st=1684514229~exp=1684514829~hmac=1fbfb3adeb2db860f8a6054f528e9a14982bb8c90171d81134252e09fdbe0e53" alt="Shoes" /></figure>
   <div className="card-body">
   <div>
@@ -32,7 +32,7 @@ const HeroProduct = () => {
       <button className="btn btn-primary">View Details</button>
   </div>
 </div>
-           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400">
+           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400" data-aos="zoom-in-left">
   <figure><img src="https://img.freepik.com/free-photo/pink-easter-car-with-egg-still-life_23-2149301274.jpg?w=740&t=st=1684514544~exp=1684515144~hmac=723d21af7721947dd9908e8282b0c43e569d8d289239e6074b188ae8899c7701" alt="Shoes" /></figure>
   <div className="card-body">
   <div>
@@ -45,7 +45,7 @@ const HeroProduct = () => {
       <button className="btn btn-primary">View Details</button>
   </div>
 </div>
-           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400">
+           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400" data-aos="zoom-in-right">
   <figure><img src="https://img.freepik.com/free-photo/close-up-toy-car-with-easter-eggs_23-2149318389.jpg?t=st=1684487714~exp=1684488314~hmac=3bf282e5276db16ff9e248557695746d056df096482341806db6388b037e12b1" alt="Shoes" /></figure>
   <div className="card-body">
   <div>
@@ -58,7 +58,7 @@ const HeroProduct = () => {
       <button className="btn btn-primary">View Details</button>
   </div>
 </div>
-           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400">
+           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400" data-aos="zoom-in-up">
   <figure><img src="https://img.freepik.com/free-photo/close-up-toy-car-with-easter-eggs_23-2149318363.jpg?t=st=1684515341~exp=1684515941~hmac=0555ca4828c24acdd121a6c7ee94e7d4beb9645dff5fe9a83cf506cb3850c23b" alt="Shoes" /></figure>
   <div className="card-body">
   <div>
@@ -71,7 +71,7 @@ const HeroProduct = () => {
       <button className="btn btn-primary">View Details</button>
   </div>
 </div>
-           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400">
+           <div className="card rounded-t-full w-96 bg-base-100 shadow-xl bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-violet-400 to-fuchsia-400" data-aos="zoom-in-left">
   <figure><img src="https://img.freepik.com/free-photo/close-up-toy-car-with-easter-eggs_23-2149318378.jpg?t=st=1684509795~exp=1684510395~hmac=100f75083626994a10762cade26fff28d0a57fdef2257597915d1ba482bbd675" alt="Shoes" /></figure>
   <div className="card-body">
   <div>

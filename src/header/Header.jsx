@@ -26,6 +26,9 @@ const Header = () => {
       <li><Link to='/mytoys'>My Toys</Link></li>
       <li><Link to='/addtoys'>Add A Toy</Link></li>
       <li><Link to='/blogs'>Blogs</Link></li>
+      {
+        !user ? <li><Link to='register'>Register</Link></li> : ""
+      }
       </ul>
     </div>
     <div className='flex items-center'>
@@ -40,7 +43,9 @@ const Header = () => {
       <li><Link to='/mytoys'>My Toys</Link></li>
       <li><Link to='/addtoys'>Add A Toy</Link></li>
       <li><Link to='/blogs'>Blogs</Link></li>
-      <li><Link to='register'>Register</Link></li>
+      {
+        !user ? <li><Link to='register'>Register</Link></li> : ""
+      }
     </ul>
   </div>
   <div className="navbar-end">

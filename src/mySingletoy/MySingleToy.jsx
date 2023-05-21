@@ -2,24 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MySingleToy = ({mytoy, handleDelete}) => {
-    const {_id, sellerName, name, catagory, price, quantity, details} = mytoy;
+    const {_id, sellerName, name, catagory, price, quantity} = mytoy;
 
     return (
-        <div>
-          <div className="overflow-x-auto w-full mb-2">
-          <table className="table w-full">
-          <thead>
-      <tr>
-        <th>Seller Name</th>
-        <th>Toy Name</th>
-        <th>Catagory</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Details</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td>
           <div className="flex items-center space-x-3">
@@ -35,7 +20,6 @@ const MySingleToy = ({mytoy, handleDelete}) => {
         <td>{catagory}</td>
         <td>{price}</td>
         <td>{quantity}</td>
-        <td>{details}</td>
         <th>
           <div className='flex flex-col gap-2'>
           <Link to={`/toy/${_id}`}><button className="px-4 py-2 w-[8rem] bg-indigo-500 rounded-md">View details</button></Link>
@@ -44,10 +28,6 @@ const MySingleToy = ({mytoy, handleDelete}) => {
           </div>
         </th>
       </tr>
-      </tbody>
-      </table>
-      </div>
-</div>
     );
 };
 

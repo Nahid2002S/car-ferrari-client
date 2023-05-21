@@ -67,10 +67,26 @@ const MyToy = () => {
                 <button onClick={handleAscending} className='px-4 py-2 bg-indigo-500'>Ascending</button>
                 <button onClick={handleDescending} className='px-4 py-2 bg-indigo-500'>Descending</button>
             </div>
-            {
+            <div className="overflow-x-auto w-full mb-2">
+            <table className='table w-full'>
+            <thead>
+      <tr>
+        <th>Seller Name</th>
+        <th>Toy Name</th>
+        <th>Catagory</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+           {
                 mytoys.map(mytoy => <MySingleToy key={mytoy._id} mytoy={mytoy} handleDelete={handleDelete}></MySingleToy>)
             }
-            </div>
+    </tbody>
+    </table>
+    </div>
+        </div>
     );
 };
 

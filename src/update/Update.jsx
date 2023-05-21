@@ -41,10 +41,10 @@ const Update = () => {
     useTitle('Update');
 
     return (
-        <div className='px-48'>
+        <div className='lg:px-48 mb-4'>
             <h1 className='text-3xl font-extrabold text-center my-4'>Update Toy</h1>
-            <form onSubmit={handleUpdateToys} className='bg-indigo-200 py-12 rounded-md'>
-                <h3 className='text-2xl font-bold text-center mb-4'>Product Name: {name}</h3>
+            <form onSubmit={handleUpdateToys} className='bg-gradient-to-r from-indigo-600 to-sky-950 py-12 rounded-md'>
+                <h3 className='text-2xl font-bold text-center mb-4 text-sky-200'>Product Name: {name}</h3>
                 <div className='flex justify-center gap-16'>
                 <div className='w-[40%]'>
                 <label htmlFor="">
